@@ -2,38 +2,38 @@ import { motion } from "framer-motion"
 import { ProfileSection } from "@/components/ProfileSection"
 import { LinkCard } from "@/components/LinkCard"
 import { SocialFooter } from "@/components/SocialFooter"
-import { Globe, Youtube, Mail, ShoppingBag, FileText, MessageCircle, Send } from "lucide-react"
+import { BookOpen, Mail, FileText, MessageCircle, Send, CalendarDays, Users } from "lucide-react"
 
 const links = [
   {
-    title: "Мой сайт",
-    description: "Портфолио и услуги",
+    title: "База знаний",
+    description: "Правила, процессы и документация",
     href: "#",
-    icon: Globe,
+    icon: BookOpen,
   },
   {
-    title: "YouTube канал",
-    description: "Видео и туториалы",
+    title: "Чат команды",
+    description: "Telegram-группа всех сотрудников",
     href: "#",
-    icon: Youtube,
+    icon: MessageCircle,
   },
   {
-    title: "Магазин",
-    description: "Товары и услуги",
-    href: "#",
-    icon: ShoppingBag,
-  },
-  {
-    title: "Telegram",
-    description: "Написать напрямую",
-    href: "#",
-    icon: Send,
-  },
-  {
-    title: "Бесплатные материалы",
-    description: "Шаблоны и гайды",
+    title: "Важные документы",
+    description: "Договоры, политики, инструкции",
     href: "#",
     icon: FileText,
+  },
+  {
+    title: "HR и кадры",
+    description: "Вопросы по зарплате и отпускам",
+    href: "#",
+    icon: Users,
+  },
+  {
+    title: "Расписание и встречи",
+    description: "Общий календарь команды",
+    href: "#",
+    icon: CalendarDays,
   },
 ]
 
@@ -211,9 +211,9 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="GlassLinks"
-            bio="Креативный дизайнер и разработчик"
-            imageUrl="/images/544291433-18043960274659947-5766591717842883293-n.jpg"
+            name="Добро пожаловать!"
+            bio="Всё, что нужно знать новому сотруднику — здесь 👇"
+            imageUrl="/placeholder.jpg"
           />
         </motion.div>
 
@@ -226,7 +226,7 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="pb-2">
-          <SocialFooter socials={socials} copyright="2025 GlassLinks" />
+          <SocialFooter socials={socials} copyright="2026 · Отдел кадров" />
         </motion.div>
       </motion.div>
     </main>
